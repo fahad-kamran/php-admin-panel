@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+    h3{
+  font-family: Calibri; 
+  font-size: 25pt;         
+  font-style: normal; 
+  font-weight: bold; 
+  color:black;
+  text-align: center; 
+  text-decoration: underline
+}
+
+table{
+  font-family: Calibri; 
+  color:black; 
+  font-size: 24px; 
+  width: 60%;
+  border-bottom-right-radius: 40px;
+  border-top-left-radius: 40px;
+  margin-left: 20%;
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: bold;
+  background-color: rgb(177, 164, 255); 
+  border-collapse: collapse; 
+  border:4px solid black;
+}
+input{
+    height: 40px;
+    width: 300px;
+    font-size: 20px; 
+    padding-left: 10px;
+}
+tr{
+    height: 60px;
+}
+.mybtn{
+    font-size: 24px;
+    padding:10px;
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    border-Top-left-radius: 14px;
+    border-Top-right-radius: 14px;
+    margin-left: 200px;
+    margin-bottom: 20px;
+}
+</style>
+  
+<body>
+    <h3>STUDENT REGISTRATION FORM</h3>
+    <div class="stdform">
+<table>
+    <tr>
+        <td>FIRST NAME</td>
+        <td><input type="text" id="stdfname" maxlength="30"/>
+        
+        </td>
+        </tr>
+         
+        <!----- Last Name ---------------------------------------------------------->
+        <tr>
+        <td>LAST NAME</td>
+        <td><input type="text"  id="stdlname" maxlength="30"/>
+        
+        </td>
+        </tr>
+        
+          <!----- Father Name ---------------------------------------------------------->
+          <tr>
+            <td>Father NAME</td>
+            <td><input type="text"  id="stdfathname" maxlength="30"/>
+            
+            </td>
+            </tr>
+        
+        <!----- Mobile Number ---------------------------------------------------------->
+        <tr>
+        <td>MOBILE NUMBER</td>
+        <td>
+        <input type="text" id="stdmblnumber" maxlength="11" />
+    
+        </td>
+        </tr>
+         
+        <!----- Country ---------------------------------------------------------->
+        <tr>
+        <td>COUNTRY</td>
+        <td><input type="text" id="stdcountry" /></td>
+        </tr>
+         
+       <!----- City ---------------------------------------------------------->
+       <tr>
+        <td>City</td>
+        <td><input type="text" id="stdcity" /></td>
+        </tr>
+         
+        <tr>
+            <td colspan="2"><button class="mybtn" onclick="add_Student()">Add Student</button></td>
+        </tr>
+</table>
+    </div>
+
+</body>
+</html>
